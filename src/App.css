@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v13/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", "FreeSans", "Verdana", "Tahoma", "Lucida Sans", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  margin: 0;
+  background: #272727;
+}
+
+.accent {
+  color: #018184;
+}
+
+/*****************************/
+/*HEADER*/
+/*****************************/
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 45px;
+  background: #1e1e1e;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  color: #ababab;
+}
+
+#header a {
+  color: #ababab;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#header .logo {
+  padding: 10px;
+  background-color: #272727;
+  font-size: 30px;
+  display: inline;
+}
+
+#header #info, #header #about {
+  position: absolute;
+  top: 50px;
+  left: 75px;
+  width: 210px;
+  background: #1e1e1e;
+  border-top: 0;
+  padding: 10px;
+}
+
+#header #about {
+  left: 0;
+  width: 250px;
+}
+
+#header nav {
+  padding: 4px;
+  display: inline;
+}
+
+#header nav a {
+  width: 20px;
+  opacity: 0.8;
+  padding: 5px;
+  font-size: 26px;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+#header nav a:hover {
+  opacity: 1;
+}
+
+#header nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#header nav .disabled:hover {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#header .status {
+  padding: 11px;
+  display: inline;
+  float: right;
+  font-size: 15px;
+}
+
+/**********************************************/
+/*TEXTAREA AND TEXTAREA SCROLLBAR*/
+/*********************************************/
+#textarea-container {
+  width: 100%;
+  position: absolute;
+  background: #272727;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  background: #272727;
+  color: #ababab;
+  border: none;
+  outline: none;
+  resize: none;
+  -ms-overflow-style: none;
+  overflow: auto;
+  padding: 10px 3px 10px 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(171, 171, 171, 0.5);
+}
+
+.scroller {
+  scrollbar-color: rgba(171, 171, 171, 0.5) #1e1e1e;
+  scrollbar-width: thin;
+}
+
+.alert-shown {
+  opacity: 1;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.alert-hidden {
+  opacity: 0;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .status {
+    width: 100%;
+    text-align: center;
+    background: #1e1e1e;
+  }
+}
+/*# sourceMappingURL=App.css.map */
