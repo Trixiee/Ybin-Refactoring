@@ -15,7 +15,7 @@
     "mousetrap": "^1.6.3",
     "mousetrap-global-bind": "^1.1.0",
     "nanoscroller": "^0.8.7",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-fontawesome": "^1.6.1",
